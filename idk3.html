@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>🔒</title>
-	<script type="text/javascript">
-	function checkpassword() {
-		var password = document getElementsById('passwordbox');
-		var passwordText = password value
-		if(passwordText == 'Banana') {
-			return true;
+	<title> passwords </title>
+	<script>
+		function checkpassword() {
+			var password = document.getElementById("passwordbox");
+			var passwordText= password.value;
+			if(passwordText== "banana") {
+				return true;
+			}
+			else{
+
+				alert("FAIL");
+				return false;
+			}
+			
 		}
-		else{
-			alert('WRONG')
-			return false;
-		}
-	}
-</script>
+	</script>
 </head>
 <body>
-<p style="font-size: 50px;">Banana</p>
-<p>gib<i>egg</i></p>
 
+	<p style="font-size:50px;"> Welcome! </p>
+	<p> Please enter the password to view the following website.</p>
+	<p> Password: <input id="passwordbox" type="password"></p>
+	<a href="idk.html" onclick="return checkpassword() ;">Click here to submit password and view the website.</a>
 
 </body>
 </html>
